@@ -1,0 +1,3 @@
+-r requirements.txt
+qwen-asr
+accelerate>=0.30

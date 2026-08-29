@@ -1,0 +1,41 @@
+# ================= 数据配置 =================
+data_root: "data/fau_pretrain_frames"
+fau_config_path: null
+num_frames: 16
+frame_size_h: 224
+frame_size_w: 336
+
+# ================= 模型配置 =================
+clip_model: "ViT-B/16"
+event_encoder_type: "cls_token"
+embed_dim: 768
+num_transformer_layers: 1         # ✅ 修改：从 4 降到 1，防止小数据集死记硬背
+num_heads: 4                      # ✅ 修改：从 8 降到 4，降低模型复杂度
+adapter_type: "mlp"
+adapter_hidden_dim: 512
+use_learnable_prompt: false
+num_context: 16
+dropout: 0.3                      # ✅ 修改：从 0.1 提高到 0.3，增加正则化防止过拟合
+freeze_clip: true
+
+# ================= 训练配置 =================
+batch_size: 16
+epochs: 50
+learning_rate: 0.0005             # ✅ 保持 0.001
+min_lr: 0.00001                   # ✅ 保持 1e-5
+weight_decay: 0.05
+warmup_epochs: 10                 # ✅ 保持 10
+
+# ================= 多卡配置 =================
+distributed: false
+world_size: 1
+
+# ================= 输出配置 =================
+output_dir: "outputs/fau_pretrain"
+save_interval: 5                  # 每 5 个 epoch 保存一次
+log_interval: 10                  # 每 10 个 batch 打印一次
+
+# ================= 其他配置 =================
+seed: 42
+num_workers: 4
+mixed_precision: true
