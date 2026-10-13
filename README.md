@@ -7,7 +7,43 @@ This repository contains the code used for:
 3. visual, audio, and text feature extraction; and
 4. information-guided multimodal emotion classification on Ekman6 and VideoEmotion8.
 
-The dataset and pretrained checkpoints used in our experiments will be released later.
+The Emo-DVS dataset download link and usage requirements are provided below. Pretrained checkpoints will be released later.
+
+## Emo-DVS dataset / Emo-DVS 数据集
+
+**Emo-DVS 是实际拍摄采集的数据集。仅限非商业科研与教学使用，禁止商用；使用时必须保护被拍摄者的隐私。**
+
+### 下载 / Download
+
+- 百度网盘分享文件：`emo-dvs`
+- 下载链接：[Emo-DVS（百度网盘）](https://pan.baidu.com/s/1X0zjCDlZHVfPlyXh5CpyXQ?pwd=rm84)
+- 提取码：`rm84`
+
+本仓库提供数据集介绍、下载入口和相关代码。数据集文件通过上述百度网盘链接获取。
+
+### 使用与隐私要求
+
+1. **禁止商用**：数据集及其衍生数据仅可用于非商业科研与教学，不得用于商业产品、商业服务、付费数据分发或其他营利性用途。
+2. **保护隐私**：不得尝试识别、重新识别被拍摄者，或将数据与其他信息关联以推断其身份；不得用于人脸身份识别、人员追踪或侵犯个人隐私的用途。
+3. **谨慎展示**：论文、报告、演示或公开网页中的示例须充分匿名化或去标识化，不得公开可识别个人身份的影像、音频或其他个人信息。
+4. **安全存储**：限制数据访问权限，妥善保管原始数据及衍生数据，不得将包含个人信息的样本上传到公开仓库或未经授权的平台。
+5. **分享限制**：不得擅自公开、转售或重新分发原始数据及包含可识别个人信息的衍生数据；需要分享下载入口时，请引用本仓库并保留上述使用限制。
+
+上述要求适用于通过本节链接提供的 Emo-DVS 数据集及其衍生数据。其他数据集和第三方代码仍须遵守各自的使用条款。
+
+### English
+
+**Emo-DVS is a dataset collected through real-world filming. It is provided only for non-commercial research and education. Commercial use is prohibited, and the privacy of the recorded individuals must be protected.**
+
+Download the shared `emo-dvs` files from [Baidu Netdisk](https://pan.baidu.com/s/1X0zjCDlZHVfPlyXh5CpyXQ?pwd=rm84) using extraction code `rm84`.
+
+- Do not use the dataset or derived data in commercial products, commercial services, paid data distribution, or other profit-making activities.
+- Do not identify or re-identify recorded individuals, link the data with other sources to infer their identities, or use it for facial identification, individual tracking, or privacy-invasive purposes.
+- Anonymize or de-identify examples used in publications, reports, demonstrations, or public websites. Do not publish identifiable images, audio, or other personal information.
+- Store original and derived data securely, restrict access, and do not upload samples containing personal information to public repositories or unauthorized platforms.
+- Do not publicly redistribute or resell the original data or derived data containing identifiable personal information without authorization. When sharing the download entry, reference this repository and retain these restrictions.
+
+These requirements apply to the Emo-DVS dataset provided through the link above and its derived data. Other datasets and third-party code remain subject to their respective terms.
 
 ## Repository layout
 
